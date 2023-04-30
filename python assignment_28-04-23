@@ -1,9 +1,24 @@
-python_book1=int(input("Enter no of Introduction to python programming books: "))
-python_libraries_book2=int(input("Enter no of python libraries books: "))
-datascience_book3=int(input("Enter no of datascience books in python: "))
-totalnoof_book=(float)(python_book1*499+python_libraries_book2*855+datascience_book3*645)
-gst_percent=0.12
-delivery_charges=250.00
-gst_rate=(gst_percent*totalnoof_book)
-total_amount=(float)(totalnoof_book+gst_rate+delivery_charges)
-print("The total invoice amout: ",total_amount)
+problem 1
+  python_book1=int(input("Enter no of Introduction to python programming books: "))
+  python_libraries_book2=int(input("Enter no of python libraries books: "))
+  datascience_book3=int(input("Enter no of datascience books in python: "))
+  totalnoof_book=(float)(python_book1*499+python_libraries_book2*855+datascience_book3*645)
+  gst_percent=0.12
+  delivery_charges=250.00
+  gst_rate=(gst_percent*totalnoof_book)
+  total_amount=(float)(totalnoof_book+gst_rate+delivery_charges)
+  print("The total invoice amout: ",total_amount)
+
+
+
+
+
+2.  problem 2
+
+strings=input("Enter a string: ")
+unique_letters=[]
+for i in strings.lower():
+    if i.isalpha() and i not in unique_letters:
+        unique_letters.append(i)
+t=",".join(unique_letters)
+print("unique_letters=",",".join(unique_letters))
